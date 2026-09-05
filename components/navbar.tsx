@@ -74,7 +74,7 @@ export function Navbar() {
           href="#contact"
           className="hidden items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground transition-transform hover:-translate-y-0.5 md:inline-flex"
         >
-          Let&apos;s Talk <ArrowRight className="h-4 w-4" />
+          Get Free Consultation <ArrowRight className="h-4 w-4" />
         </a>
 
         <button
@@ -108,7 +108,7 @@ export function Navbar() {
                 onClick={() => setOpen(false)}
                 className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-accent px-4 py-3 text-sm font-semibold text-accent-foreground"
               >
-                Let&apos;s Talk <ArrowRight className="h-4 w-4" />
+                Get Free Consultation <ArrowRight className="h-4 w-4" />
               </a>
             </li>
           </ul>
