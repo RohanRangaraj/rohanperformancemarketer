@@ -55,7 +55,7 @@ export function Services() {
   return (
     <section id="services" className="border-t border-border py-20 md:py-28">
       <div className="container-page">
-        <SectionHeading title="How I Help Brands Grow." />
+        <SectionHeading title="Services & Expertise" />
 
         <div className="mt-12 grid gap-4 md:grid-cols-2">
           {services.map((service, i) => (

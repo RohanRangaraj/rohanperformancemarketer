@@ -16,9 +16,9 @@ const achievements = [
   },
   {
     metric: '₹1L+',
-    sub: 'Weekly Revenue Generated',
+    sub: '₹1 Lakh+ Daily Revenue',
     industry: 'Clothing',
-    body: 'Generated and maintained approximately ₹1L in weekly revenue through campaign optimisation.',
+    body: 'Consistently generated ₹1 Lakh+ in revenue every day for 7 consecutive days.',
   },
   {
     metric: '800+',
@@ -32,7 +32,7 @@ export function Achievements() {
   return (
     <section id="results" className="border-t border-border py-20 md:py-28">
       <div className="container-page">
-        <SectionHeading title="Results I'm Proud Of." />
+        <SectionHeading title="Key Results" />
 
         <div className="mt-12 grid gap-4 md:grid-cols-2">
           {achievements.map((a, i) => (

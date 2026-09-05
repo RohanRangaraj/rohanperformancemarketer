@@ -16,6 +16,7 @@ const caseStudies = [
     results: [
       { value: '7X', label: 'ROAS' },
       { value: '₹110', label: 'CPA' },
+      { value: '₹4.5', label: 'CPC' },
     ],
     body: 'Improved campaign efficiency while reducing customer acquisition costs through continuous optimisation, audience testing, and creative experimentation.',
   },
@@ -46,6 +47,7 @@ const caseStudies = [
     results: [
       { value: '18.4K', label: 'Landing Page Views' },
       { value: '₹2', label: 'Cost Per LPV' },
+      { value: '₹36K', label: 'Ad Spend' },
     ],
     body: 'Successfully increased website traffic while maintaining a highly efficient cost per landing page view.',
   },
@@ -56,7 +58,7 @@ export function CaseStudies() {
     <section id="case-studies" className="border-t border-border py-20 md:py-28">
       <div className="container-page">
         <SectionHeading
-          title="Selected Work."
+          title="Case Studies"
           subtitle="A closer look at campaigns, strategies, and measurable results."
         />
 

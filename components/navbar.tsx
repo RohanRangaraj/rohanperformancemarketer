@@ -52,7 +52,7 @@ export function Navbar() {
           href="#top"
           className="font-heading text-xl font-bold tracking-tight text-foreground"
         >
-          ROHAN<span className="text-accent">.</span>
+          ROHAN
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">

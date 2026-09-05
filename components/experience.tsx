@@ -22,7 +22,7 @@ export function Experience() {
             <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
               <div>
                 <h3 className="font-heading text-2xl font-bold tracking-tight">
-                  Digifyce
+                  Digifyce Global Private Limited
                 </h3>
                 <p className="mt-1 text-sm font-medium text-accent">
                   Performance Marketing

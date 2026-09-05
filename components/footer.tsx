@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col justify-between gap-8 md:flex-row">
           <div className="max-w-sm">
             <p className="font-heading text-xl font-bold tracking-tight">
-              ROHAN<span className="text-accent">.</span>
+              ROHAN
             </p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
               Performance Marketer focused on growth, ROI, and measurable results.
@@ -34,7 +34,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t border-border pt-8 text-center text-xs text-muted-foreground">
-          © 2026 Rohan. All Rights Reserved.
+          © 2026 Rohan — All Rights Reserved.
         </div>
       </div>
     </footer>
