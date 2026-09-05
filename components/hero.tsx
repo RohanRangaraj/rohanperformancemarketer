@@ -57,18 +57,11 @@ export function Hero() {
         {/* Right: portrait + floating metrics */}
         <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
-            {/* portrait placeholder */}
-            <div className="flex h-full w-full flex-col items-center justify-center gap-3 text-muted-foreground">
-              <div className="flex h-20 w-20 items-center justify-center rounded-full border border-border bg-surface">
-                <User className="h-9 w-9" />
-              </div>
-              <p className="text-xs font-medium uppercase tracking-widest">
-                Rohan&apos;s Photo
-              </p>
-              <p className="max-w-[12rem] text-center text-[11px] leading-relaxed text-muted-foreground/70">
-                Replace this placeholder with your professional portrait
-              </p>
-            </div>
+            <img
+              src="/images/rohan-portrait.png"
+              alt="Rohan, performance marketer"
+              className="h-full w-full object-cover object-top"
+            />
             <div
               aria-hidden
               className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent"
