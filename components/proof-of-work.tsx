@@ -1,13 +1,14 @@
+import Image from 'next/image'
 import { SectionHeading } from './section-heading'
 import { Reveal } from './reveal'
 import { ImageIcon, Lock } from 'lucide-react'
 
 const proofs = [
-  { id: 'p1', tall: true },
-  { id: 'p2', tall: false },
-  { id: 'p3', tall: false },
-  { id: 'p4', tall: true },
-  { id: 'p5', tall: false },
+  { id: 'p1', tall: true, src: '/campaign1.png' },
+  { id: 'p2', tall: false, src: '/campaign2.png' },
+  { id: 'p3', tall: false, src: '/campaign3.png' },
+  { id: 'p4', tall: true, src: '/campaign4.png' },
+  { id: 'p5', tall: false, src: '/campaign5.png' },
 ]
 
 export function ProofOfWork() {
@@ -26,18 +27,25 @@ export function ProofOfWork() {
               delay={i * 70}
               className="group block break-inside-avoid overflow-hidden rounded-2xl border border-border bg-surface transition-colors duration-300 hover:border-accent"
             >
-              <div
-                className={`relative flex items-center justify-center overflow-hidden bg-card ${
-                  proof.tall ? 'aspect-[4/5]' : 'aspect-video'
-                }`}
-              >
-                <div className="flex flex-col items-center gap-2 text-muted-foreground transition-transform duration-500 group-hover:scale-105">
-                  <ImageIcon className="h-8 w-8" />
-                  <span className="text-[11px] uppercase tracking-widest">
-                    Screenshot Placeholder
-                  </span>
+              {proof.src ? (
+                <Image
+                  src={proof.src}
+                  alt={`Campaign performance snapshot ${proof.id}`}
+                  width={1600}
+                  height={900}
+                  className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              ) : (
+                <div className="flex aspect-video items-center justify-center bg-card">
+                  <div className="flex flex-col items-center gap-2 text-muted-foreground transition-transform duration-500 group-hover:scale-105">
+                    <ImageIcon className="h-8 w-8" />
+                    <span className="text-[11px] uppercase tracking-widest">
+                      Screenshot Placeholder
+                    </span>
+                  </div>
                 </div>
-              </div>
+              )}
             </Reveal>
           ))}
         </div>
